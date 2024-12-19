@@ -11,7 +11,7 @@ def find_file_path(name):
     print(f"Full path : {os.path.abspath(name)}")
 
 
-path = "C:\\Users\\User\\OneDrive\\Documents\\VS CODE PYTHON\\New game\\pics\\"
+path = find_file_path("Road- sky and clouds horizontal 1.png")
 
 def make_image(file_name, width, height):
     return pygame.transform.scale(pygame.image.load(f"{path}{file_name}").convert_alpha(), (width , height))
